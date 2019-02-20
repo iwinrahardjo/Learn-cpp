@@ -18,7 +18,7 @@ int main()
     cout << "enter your salary: \n";
     cin >> p1.salary;
 
-    cout << "your name is " << p1.name << ".\n";
+    cout << "\nyour name is " << p1.name << ".\n";
     cout << "your age is " << p1.age << ".\n";
     cout << "your salary is " << p1.salary << ".\n";
 

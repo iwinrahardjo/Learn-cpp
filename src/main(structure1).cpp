@@ -8,19 +8,26 @@ struct Person
     float salary;
 };
 
+void displayData(Person);
+
 int main()
 {
-    Person p1;
-    cout << "enter your name:\n ";
-    cin.get(p1.name, 40);
+    Person p;
+    cout << "\nenter your name:\n ";
+    cin.get(p.name, 40);
     cout << "enter your age: \n";
-    cin >> p1.age;
+    cin >> p.age;
     cout << "enter your salary: \n";
-    cin >> p1.salary;
+    cin >> p.salary;
 
-    cout << "\nyour name is " << p1.name << ".\n";
-    cout << "your age is " << p1.age << ".\n";
-    cout << "your salary is " << p1.salary << ".\n";
+    displayData(p);
 
     return 0;
+}
+
+void displayData(Person p)
+{
+    cout << "\nYour name is " << p.name << "\n";
+    cout << "Your age is " << p.age << "\n";
+    cout << "Your salary is " << p.salary << "\n";
 }
